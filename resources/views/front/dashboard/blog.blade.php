@@ -74,6 +74,7 @@
 
                             </tbody>
                         </table>
+                        {{ $blogs->links('pagination::bootstrap-5') }}
                     </div>
                 </div>
             </div>

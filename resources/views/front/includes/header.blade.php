@@ -60,7 +60,7 @@
                                                 </div>
                                             </div><!--//col-->
                                         </div><!--//row-->
-                                        <a class="link-mask" href="notifications.php"></a>
+                                        <a class="link-mask" href="#"></a>
                                     </div><!--//item-->
                                     <div class="item p-3">
                                         <div class="row gx-2 justify-content-between align-items-center">
@@ -84,7 +84,7 @@
                                                 </div>
                                             </div><!--//col-->
                                         </div><!--//row-->
-                                        <a class="link-mask" href="notifications.php"></a>
+                                        <a class="link-mask" href="#"></a>
                                     </div><!--//item-->
                                     <div class="item p-3">
                                         <div class="row gx-2 justify-content-between align-items-center">
@@ -106,7 +106,7 @@
                                                 </div>
                                             </div><!--//col-->
                                         </div><!--//row-->
-                                        <a class="link-mask" href="notifications.php"></a>
+                                        <a class="link-mask" href="#"></a>
                                     </div><!--//item-->
                                     <div class="item p-3">
                                         <div class="row gx-2 justify-content-between align-items-center">
@@ -121,18 +121,18 @@
                                                 </div>
                                             </div><!--//col-->
                                         </div><!--//row-->
-                                        <a class="link-mask" href="notifications.php"></a>
+                                        <a class="link-mask" href="#"></a>
                                     </div><!--//item-->
                                 </div><!--//dropdown-menu-content-->
 
                                 <div class="dropdown-menu-footer p-2 text-center">
-                                    <a href="notifications.php">View all</a>
+                                    <a href="#">View all</a>
                                 </div>
 
                             </div><!--//dropdown-menu-->
                         </div><!--//app-utility-item-->
                         <div class="app-utility-item">
-                            <a href="settings.php" title="Settings">
+                            <a href="#" title="Settings">
                                 <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear icon"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">

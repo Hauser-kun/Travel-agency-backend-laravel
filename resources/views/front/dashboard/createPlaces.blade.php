@@ -20,7 +20,7 @@
                         </h5>
                     </div>
                     <div class="card-body">
-                        <form action="{{ route('account.addPackages') }}" method="post" enctype="multipart/form-data">
+                        <form action="{{ route('account.addPlaces') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="">
                                 <div class="col p-2">

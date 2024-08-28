@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="col p-2">
                                     <label for="">Status</label>
-                                    <select class="form-select-sm" name="status" value="{{ old('status') }}"
+                                    <select class="form-select-sm" name="status" value="{{ old('status',$News->status) }}"
                                         id="">
                                         <option value="1" {{ ($News->status== 1) ? 'selected' : '' }}>Activate</option>
                                         <option value="0" {{ ($News->status == 0) ? 'selected' : '' }}>Deactivate</option>

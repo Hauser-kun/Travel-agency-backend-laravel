@@ -16,7 +16,7 @@
                     <div class="card-header">
 
                         <h4>Tour & Packages
-                            <a class="btn btn-primary float-end" href="{{ route('account.createPackage') }}">Create
+                            <a class="btn btn-primary float-end" href="{{ route('account.createPlaces') }}">Create
                                 Packages</a>
                         </h4>
                     </div>
@@ -40,20 +40,20 @@
                             </thead>
                             <tbody>
 
-                                @if ($packages->isNotEmpty())
-                                    @foreach ($packages as $package)
+                                @if ($places->isNotEmpty())
+                                    @foreach ($places as $place)
                                         <tr>
-                                            <td>{{ $package->id }}</td>
-                                            <td>{{ $package->title }}</td>
-                                            <td>{{ $package->location }}</td>
-                                            <td>{{ $package->period }}</td>
-                                            <td>{{ $package->details }}</td>
-                                            <td>{{ $package->description }}</td>
-                                            <td>{{ $package->price }}</td>
-                                            <td>{{ $package->slug }}</td>
+                                            <td>{{ $place->id }}</td>
+                                            <td>{{ $place->title }}</td>
+                                            <td>{{ $place->location }}</td>
+                                            <td>{{ $place->period }}</td>
+                                            <td>{{ $place->details }}</td>
+                                            <td>{{ $place->description }}</td>
+                                            <td>{{ $place->price }}</td>
+                                            <td>{{ $place->slug }}</td>
                                             <td>
-                                                @if ($package->image)
-                                                    <img src="{{ asset('uploads/tour/' . $package->image) }}" width="50"
+                                                @if ($place->image)
+                                                    <img src="{{ asset('uploads/places/' . $place->image) }}" width="50"
                                                         height="50" alt="">
                                                 @else
                                                     <p>No Images</p>
@@ -61,20 +61,20 @@
 
                                             </td>
                                             <td>
-                                                @if ($package->video)
+                                                @if ($place->video)
                                                     <video
-                                                        src="{{ asset('uploads/tour_video/' . $package->video) }}"></video>
+                                                        src="{{ asset('uploads/tour_places/' . $place->video) }}"></video>
                                                 @else
                                                     <p>No Video</p>
                                                 @endif
 
                                             </td>
-                                            <td>{{ $package->status }}</td>
+                                            <td>{{ $place->status }}</td>
                                             <td>
                                                 <div class="d-flex">
-                                                    <a href="{{ route('account.editPackages', $package->id) }}"
+                                                    <a href="{{ route('account.editPlaces', $place->id) }}"
                                                         class="btn btn-primary mx-2">Edit</a>
-                                                    <form action="{{ route('account.deletepackage', $package->id) }}"
+                                                    <form action="{{ route('account.deleteplaces', $place->id) }}"
                                                         method="post">
                                                         @csrf
                                                         @method('delete')
@@ -90,9 +90,7 @@
 
                             </tbody>
                         </table>
-                        <div class="">
-                            {{ $packages->links('pagination::bootstrap-5') }}
-                        </div>
+                        {{ $places->links('pagination::bootstrap-5') }}
                     </div>
                 </div>
             </div>
